@@ -1,0 +1,41 @@
+ELI5: Erkläre ein Thema kinderleicht und ohne Jargon.
+TLDR: Gib eine sehr kurze Zusammenfassung.
+HUMANIZE: Erhalte natürliche, gesprächige Antworten – ohne cringy Buzzwords wie „revolutionär“.
+STEP-BY-STEP: Löse die Aufgabe in klaren Schritten.
+CHECKLIST: Antworte als abhakbare Liste.
+EXEC SUMMARY: Management-Zusammenfassung in wenigen Sätzen.
+ACT AS: Antworte in einer Rolle (z. B. „Act as CFO“).
+BRIEFLY: So kurz wie möglich, nur das Wesentliche.
+JARGON / JARGONIZE: Fachlich-präziser Ton, mehr Terminologie.
+AUDIENCE: Passe Inhalt an Zielgruppe an (z. B. Anfänger:innen).
+TONE: Lege Stil/Tonalität fest (z. B. sachlich, motivierend).
+SWOT: Stärken/Schwächen/Chancen/Risiken analysieren.
+FORMAT AS: Ausgabeformat vorgeben (Markdown/CSV/Tabelle/JSON).
+COMPARE: Vergleiche A vs. B nach Kriterien.
+MULTI-PERSPECTIVE: Thema aus mehreren Blickwinkeln beleuchten.
+SOCRATIC MODE: Fragend führen, Lernfragen stellen.
+FIRST PRINCIPLES: Von Grundprinzipien herleiten.
+PRE-MORTEM: Vorab-Fehleranalyse: Was könnte schiefgehen?
+3-PASS ANALYSIS: Dreifachdurchgang: grob → strukturiert → präzise.
+SYSTEMATIC BIAS CHECK: Bias-/Fehler-Check der Antwort.
+REFLECTIVE MODE: Selbstkritik/Reflexion der eigenen Antwort.
+DEV MODE: Antworte technischer, mit Debug-Details und klaren Annahmen.
+PM MODE: Denke wie ein Product Manager: Ziel, Scope, Risiken, KPIs, nächste Schritte.
+CONTEXT STACK: Fasse bisherigen Kontext zusammen und nutze ihn explizit weiter.
+BEGIN WITH / END WITH: Erzwinge Start/Schluss (z. B. „Beginne mit einer Kernaussage, ende mit 3 To-dos“).
+ROLE: TASK: FORMAT:: Striktes Briefing-Template: Rolle, Aufgabe, Ausgabeformat.
+SCHEMA: Definiere ein JSON-Schema und liefere exakt in dieser Struktur.
+REWRITE AS: Schreibe denselben Inhalt in anderem Stil/Format (z. B. Pressemitteilung).
+DELIBERATE THINKING: Antworte langsamer/bedachter; zeige strukturierte Zwischenschritte in Stichpunkten.
+NO AUTOPILOT: Keine Annahmen—frage, wo nötig; sonst Annahmen transparent nennen.
+EVAL-SELF: Kurze Selbstkritik + Verbesserungen an der Antwort.
+PARALLEL LENSES: Beleuchte das Thema parallel durch mehrere Frameworks (z. B. JTBD, 4 Ps, 5 Forces).
+PITFALLS: Liste typische Fehler/Blindspots und wie man sie vermeidet.
+METRICS MODE: Definiere Erfolgsmetriken & Messplan vor der Empfehlung.
+GUARDRAIL: Setze klare Regeln/No-Gos (Compliance, Budget, Stilgrenzen) und halte sie ein.
+USE PRIOR / RECALL: Hole gezielt frühere Chat-Teile/Anforderungen zurück und referenziere sie.
+REQUIRES SOURCE: Antworte nur mit belegten Infos; inkl. Quellen/Hinweisen.
+PRIORITIZE: Ordne Empfehlungen nach Impact/Aufwand oder Dringlichkeit.
+CONSTRAINT MODE: Arbeite strikt unter vorgegebenen Einschränkungen (Zeit/Budget/Tools).
+FRICTION SIMULATION: Simuliere Gegenwind/Edge-Cases (Stakeholder, rechtliche Hürden) und reagiere darauf.
+IF/THEN INTERACTIVE: Interaktive Entscheidungsbäume („Wenn A, dann Schritt X; sonst Y“).
