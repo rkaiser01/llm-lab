@@ -93,7 +93,7 @@ def orchestrated_chat(
     2) Use the guidance to generate the final answer with the primary model.
 
     If return_advisor is True, returns (final_answer, advisor_notes),
-    otherwise only the final answer.
+    otherwise only the final answer.erte
     """
     advisor_notes = advisor_step(user_prompt, advisor_model=advisor_model)
     final_answer = primary_step(
