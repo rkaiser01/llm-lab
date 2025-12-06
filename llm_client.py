@@ -5,6 +5,8 @@ from typing import Dict, List, TypedDict
 
 from openai import OpenAI
 
+from usage_tracker import record_usage
+
 
 class ChatMessage(TypedDict):
     role: str
@@ -62,6 +64,8 @@ def chat_with_messages(
 ) -> str:
     """
     Send a list of chat messages to the given model and return the response text.
+
+    This function also records token usage and estimated cost per model.
     """
     client = get_openai_client()
 
@@ -75,6 +79,25 @@ def chat_with_messages(
         messages=messages,
         max_completion_tokens=max_tokens,
     )
+
+    # Extract token usage if available
+    input_tokens = 0
+    output_tokens = 0
+
+    usage = getattr(response, "usage", None)
+    if usage is not None:
+        # Newer APIs may use input_tokens/output_tokens,
+        # older Chat Completions use prompt_tokens/completion_tokens.
+        input_tokens = (
+            getattr(usage, "input_tokens", None)
+            or getattr(usage, "prompt_tokens", 0)
+        )
+        output_tokens = (
+            getattr(usage, "output_tokens", None)
+            or getattr(usage, "completion_tokens", 0)
+        )
+
+    record_usage(model=model, input_tokens=input_tokens, output_tokens=output_tokens)
 
     message = response.choices[0].message.content
     return message or ""

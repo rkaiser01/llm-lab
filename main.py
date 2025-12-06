@@ -3,6 +3,8 @@ from __future__ import annotations
 from llm_client import AVAILABLE_MODELS, get_default_model
 from orchestrator import orchestrated_chat
 
+from usage_tracker import format_usage_summary
+
 
 def choose_model() -> str:
     """
@@ -74,10 +76,17 @@ def main() -> None:
             print(f"Error while calling LLMs: {exc}")
             continue
 
-        print("\n[Advisor notes]")   # optional: zum Debuggen / Lernen
+        # Show intermediate advisor step
+        print("\n[Advisor notes]")
         print(advisor_notes)
+
+        # Show final answer
         print("\nAssistant:")
         print(final_answer)
+
+        # Show aggregated usage and cost
+        print("\n[Usage]")
+        print(format_usage_summary())
         print()
 
 
