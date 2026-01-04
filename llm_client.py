@@ -4,6 +4,7 @@ import os
 from typing import Dict, List, TypedDict
 
 from openai import OpenAI
+from dotenv import load_dotenv
 
 from usage_tracker import record_usage
 
@@ -19,6 +20,7 @@ AVAILABLE_MODELS: Dict[str, str] = {
     "o3-mini": "High reasoning performance for complex tasks.",
 }
 
+load_dotenv()
 
 def get_default_model() -> str:
     """
@@ -67,6 +69,7 @@ def chat_with_messages(
 
     This function also records token usage and estimated cost per model.
     """
+
     client = get_openai_client()
 
     if model is None:
